@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuex | Zhao Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/zhaoshuhong/img/logo.png">
+    <meta name="description" content="zhao blog">
+    
+    <link rel="preload" href="/zhaoshuhong/assets/css/0.styles.a5fb0a7c.css" as="style"><link rel="preload" href="/zhaoshuhong/assets/js/app.c6c426f3.js" as="script"><link rel="preload" href="/zhaoshuhong/assets/js/2.5e56792b.js" as="script"><link rel="preload" href="/zhaoshuhong/assets/js/41.851e5919.js" as="script"><link rel="prefetch" href="/zhaoshuhong/assets/js/10.76004a66.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/11.af327fad.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/12.c43f1b05.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/13.70e02188.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/14.a7f66299.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/15.09a3dafb.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/16.79880d3b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/17.dfaab4b4.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/18.14e5c0a5.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/19.0e9f4dbe.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/20.5549704f.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/21.4f23157b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/22.cdf45597.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/23.0d9a97bb.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/24.101fcc29.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/25.e6b2c037.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/26.f7e369fa.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/27.04899c95.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/28.f3944530.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/29.c6b3138b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/3.b7c37507.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/30.b1f86c09.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/31.1b82cd37.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/32.672e9ff1.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/33.53fb210f.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/34.5aee7291.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/35.7dac0fdd.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/36.6698f980.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/37.d3e0aeac.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/38.f1ce19c2.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/39.6526d1ab.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/4.289378ae.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/40.ff22d59c.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/42.cd6512f3.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/43.77e4e8b1.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/5.7fab4c19.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/6.46d7fc46.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/7.e5db8d48.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/8.8da0bfc9.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/9.8063f420.js">
+    <link rel="stylesheet" href="/zhaoshuhong/assets/css/0.styles.a5fb0a7c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhaoshuhong/" class="home-link router-link-active"><!----> <span class="site-name">Zhao Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhaoshuhong/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><a href="/zhaoshuhong/About.html" class="nav-link">
+    About
+  </a></div> <a href="https://gitee.com/zhaoshuhong/blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      查看源码
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zhaoshuhong/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><a href="/zhaoshuhong/About.html" class="nav-link">
+    About
+  </a></div> <a href="https://gitee.com/zhaoshuhong/blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      查看源码
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/methods" class="sidebar-heading clickable"><span>vue methods 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueMobileSet" class="sidebar-heading clickable"><span>vue 应用移动端H5嵌入 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueMock" class="sidebar-heading clickable open"><span>vue常用依赖配置 学习记录</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhaoshuhong/vue/vueMock.html" class="sidebar-link">mock.js</a></li><li><a href="/zhaoshuhong/vue/vueAxios.html" class="sidebar-link">axios封装</a></li><li><a href="/zhaoshuhong/vue/vueVuex.html" aria-current="page" class="active sidebar-link">vuex</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhaoshuhong/vue/vueVuex.html#vuex" class="sidebar-link">vuex</a></li></ul></li><li><a href="/zhaoshuhong/vue/vueEnv.html" class="sidebar-link">vue环境变量配置</a></li><li><a href="/zhaoshuhong/vue/vueConfig.html" class="sidebar-link">vue.config.js配置</a></li><li><a href="/zhaoshuhong/vue/vueDirectives.html" class="sidebar-link">vue 常用自定义指令</a></li><li><a href="/zhaoshuhong/vue/vuePermission.html" class="sidebar-link">vue 路由/按钮权限 配置</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueCliPackage" class="sidebar-heading clickable"><span>vue Cli3 打包组件学习记录</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vuex"><a href="#vuex" class="header-anchor">#</a> vuex</h2> <p>1.安装vuex
+<code>npm install vuex --save</code></p> <p>2.创建store.js</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>import Vue from 'vue'
+import Vuex from 'vuex'
+
+Vue.use(Vuex)
+
+export default new Vuex.Store({
+  state: {
+    login:{}
+  },
+  mutations: {
+    setLogin(state, info) {
+      state.login = info;
+    },
+  },
+  actions: {
+
+  }
+})
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>3.在main.js中引入</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>import store from './store/store.js';
+
+export default new Vue({
+  store,
+  render: h =&gt; h(App)
+}).$mount('#app');
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>4.在文件中使用</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>
+import { mapState, mapMutations } from 'vuex';  // 相关语法糖
+
+computed: {
+   ...mapState([
+        'orderList',
+        'login'
+    ]),
+},
+methods:{
+  ...mapMutations(['setLogin']),
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>5.module 命令名空间模块</p> <blockquote><p>当所有状态集中在一个对象中时，会变的相当臃肿，这个时候就需要模块的管理办法</p></blockquote> <p><code>&lt;模块文件名称&gt;/index.js</code>中</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>import state from './state';
+import mutations from './mutations';
+import actions from './action';
+
+export default {
+  namespaced: true,
+  actions,
+  state,
+  mutations
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p><code>store.js</code>中</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>    import fileName from './filename/index';
+
+    const store = new Vuex.Store({
+      modules: {
+        fileName: fileName
+      },
+      state: {
+        list: []
+      },
+      mutations: {
+        setList(state, list) {
+          state.list = Array.isArray(list) ? list : [];
+        }
+      },
+      // `npm install vuex-persistedstate --save`  Vuex持久化插件(vuex-persistedstate)解决刷新数据消失的问题 根据需求是否引入plugins
+      plugins: [
+        // 默认是localStorage存储
+        createPersistedState({
+          paths: ['test']
+        }),
+        // 可以往sessionStorage存储
+        createPersistedState({
+          storage: window.sessionStorage,
+          paths: ['test']
+        })
+      ]
+    });
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br></div></div><p>在页面中使用</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>  computed: {
+    ...mapState('fileName', ['status'])  // 添加路径(scope) fileName
+  },
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://gitee.com/zhaoshuhong/blog.git/edit/master/docs/vue/vueVuex.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">11/12/2020, 9:48:25 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zhaoshuhong/vue/vueAxios.html" class="prev">
+          axios封装
+        </a></span> <span class="next"><a href="/zhaoshuhong/vue/vueEnv.html">
+          vue环境变量配置
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/zhaoshuhong/assets/js/app.c6c426f3.js" defer></script><script src="/zhaoshuhong/assets/js/2.5e56792b.js" defer></script><script src="/zhaoshuhong/assets/js/41.851e5919.js" defer></script>
+  </body>
+</html>

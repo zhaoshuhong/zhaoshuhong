@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vue 根据环境变量打包 | Zhao Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/zhaoshuhong/img/logo.png">
+    <meta name="description" content="zhao blog">
+    
+    <link rel="preload" href="/zhaoshuhong/assets/css/0.styles.a5fb0a7c.css" as="style"><link rel="preload" href="/zhaoshuhong/assets/js/app.c6c426f3.js" as="script"><link rel="preload" href="/zhaoshuhong/assets/js/2.5e56792b.js" as="script"><link rel="preload" href="/zhaoshuhong/assets/js/20.5549704f.js" as="script"><link rel="prefetch" href="/zhaoshuhong/assets/js/10.76004a66.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/11.af327fad.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/12.c43f1b05.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/13.70e02188.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/14.a7f66299.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/15.09a3dafb.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/16.79880d3b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/17.dfaab4b4.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/18.14e5c0a5.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/19.0e9f4dbe.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/21.4f23157b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/22.cdf45597.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/23.0d9a97bb.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/24.101fcc29.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/25.e6b2c037.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/26.f7e369fa.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/27.04899c95.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/28.f3944530.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/29.c6b3138b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/3.b7c37507.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/30.b1f86c09.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/31.1b82cd37.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/32.672e9ff1.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/33.53fb210f.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/34.5aee7291.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/35.7dac0fdd.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/36.6698f980.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/37.d3e0aeac.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/38.f1ce19c2.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/39.6526d1ab.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/4.289378ae.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/40.ff22d59c.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/41.851e5919.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/42.cd6512f3.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/43.77e4e8b1.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/5.7fab4c19.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/6.46d7fc46.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/7.e5db8d48.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/8.8da0bfc9.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/9.8063f420.js">
+    <link rel="stylesheet" href="/zhaoshuhong/assets/css/0.styles.a5fb0a7c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhaoshuhong/" class="home-link router-link-active"><!----> <span class="site-name">Zhao Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhaoshuhong/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><a href="/zhaoshuhong/About.html" class="nav-link">
+    About
+  </a></div> <a href="https://gitee.com/zhaoshuhong/blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      查看源码
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zhaoshuhong/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><a href="/zhaoshuhong/About.html" class="nav-link">
+    About
+  </a></div> <a href="https://gitee.com/zhaoshuhong/blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      查看源码
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/methods" class="sidebar-heading clickable"><span>vue methods 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueMobileSet" class="sidebar-heading clickable"><span>vue 应用移动端H5嵌入 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueMock" class="sidebar-heading clickable open"><span>vue常用依赖配置 学习记录</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhaoshuhong/vue/vueMock.html" class="sidebar-link">mock.js</a></li><li><a href="/zhaoshuhong/vue/vueAxios.html" class="sidebar-link">axios封装</a></li><li><a href="/zhaoshuhong/vue/vueVuex.html" class="sidebar-link">vuex</a></li><li><a href="/zhaoshuhong/vue/vueEnv.html" aria-current="page" class="active sidebar-link">vue环境变量配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhaoshuhong/vue/vueEnv.html#vue-根据环境变量打包" class="sidebar-link">vue 根据环境变量打包</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhaoshuhong/vue/vueEnv.html#一-vue-cli2-x" class="sidebar-link">一.vue cli2.X</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/vue/vueEnv.html#二-vue-cli3-x" class="sidebar-link">二.vue cli3.X</a></li></ul></li></ul></li><li><a href="/zhaoshuhong/vue/vueConfig.html" class="sidebar-link">vue.config.js配置</a></li><li><a href="/zhaoshuhong/vue/vueDirectives.html" class="sidebar-link">vue 常用自定义指令</a></li><li><a href="/zhaoshuhong/vue/vuePermission.html" class="sidebar-link">vue 路由/按钮权限 配置</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueCliPackage" class="sidebar-heading clickable"><span>vue Cli3 打包组件学习记录</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="vue-根据环境变量打包"><a href="#vue-根据环境变量打包" class="header-anchor">#</a> vue 根据环境变量打包</h2> <h3 id="一-vue-cli2-x"><a href="#一-vue-cli2-x" class="header-anchor">#</a> 一.vue cli2.X</h3> <div class="custom-block tip"><p class="custom-block-title">注意</p> <p>webpack.config 文件</p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>    new webpack.DefinePlugin({
+      'process.env': env
+    }),
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>主要是是DefinePlugin 来设置全局的环境变量</p></div> <p>1.安装cross-env
+<code>npm install cross-env --save-dev</code>
+2.修改config目录,新增test.env.js</p> <p>修改 prod.env.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token string">'use strict'</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token constant">NODE_ENV</span><span class="token operator">:</span> <span class="token string">'&quot;production&quot;'</span><span class="token punctuation">,</span>
+  <span class="token constant">EVN_CONFIG</span><span class="token operator">:</span><span class="token string">'&quot;prod&quot;'</span><span class="token punctuation">,</span>
+  <span class="token constant">TITLE</span><span class="token operator">:</span><span class="token string">'&quot;正式环境title&quot;'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>修改 dev.env.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token string">'use strict'</span>
+<span class="token keyword">const</span> merge <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack-merge'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> prodEnv <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./prod.env'</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token function">merge</span><span class="token punctuation">(</span>prodEnv<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token constant">NODE_ENV</span><span class="token operator">:</span> <span class="token string">'&quot;development&quot;'</span><span class="token punctuation">,</span>
+  <span class="token constant">EVN_CONFIG</span><span class="token operator">:</span><span class="token string">'&quot;dev&quot;'</span><span class="token punctuation">,</span>
+  <span class="token constant">TITLE</span><span class="token operator">:</span><span class="token string">'&quot;开发环境title&quot;'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>修改 test.env.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token string">'use strict'</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token constant">NODE_ENV</span><span class="token operator">:</span> <span class="token string">'&quot;production&quot;'</span><span class="token punctuation">,</span>
+  <span class="token constant">EVN_CONFIG</span><span class="token operator">:</span><span class="token string">'&quot;test&quot;'</span><span class="token punctuation">,</span>
+  <span class="token constant">TITLE</span><span class="token operator">:</span><span class="token string">'&quot;测试环境title&quot;'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>3.修改package.json,build:test打包测试环境，build:prod打包正式环境</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack-dev-server --inline --progress --config build/webpack.dev.conf.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;build:test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cross-env NODE_ENV=production EVN_CONFIG=test node build/build.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;build:prod&quot;</span><span class="token operator">:</span> <span class="token string">&quot;cross-env NODE_ENV=production EVN_CONFIG=prod node build/build.js&quot;</span>
+ <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>4修改config/index.js,修改build那一部分的代码，其他不变</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>build: {
+// 添加test、prod环境变量配置
+prodEnv: require('./prod.env'),
+testEnv: require('./test.env'),</p> <div class="language- extra-class"><pre><code>//如果需要通过打包不同的环境变量，打包到不同的文件夹可以这样写,注意用了此处代码需要注释点下面的index和assetsRoot这两个配置
+// index: path.resolve(__dirname, '../' + process.env.EVN_CONFIG + '_dist/index.html'),
+// assetsRoot: path.resolve(__dirname, '../' + process.env.EVN_CONFIG + '_dist'),
+
+// Template for index.html
+index: path.resolve(__dirname, '../dist/index.html'),
+// Paths
+assetsRoot: path.resolve(__dirname, '../dist'),
+
+assetsSubDirectory: 'static',
+assetsPublicPath: '/',
+
+/**
+ * Source Maps
+ */
+
+productionSourceMap: true,
+// https://webpack.js.org/configuration/devtool/#production
+devtool: '#source-map',
+
+// Gzip off by default as many popular static hosts such as
+// Surge or Netlify already gzip all static assets for you.
+// Before setting to `true`, make sure to:
+// npm install --save-dev compression-webpack-plugin
+productionGzip: false,
+productionGzipExtensions: ['js', 'css'],
+
+// Run the build command with an extra argument to
+// View the bundle analyzer report after build finishes:
+// `npm run build --report`
+// Set to `true` or `false` to always turn it on or off
+bundleAnalyzerReport: process.env.npm_config_report
+</code></pre></div><p>}
+5.修改build/buuild.js,注释process.env.NODE_ENV = 'production然后修改spinner。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token string">'use strict'</span>
+<span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./check-versions'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">// process.env.NODE_ENV = 'production'</span>
+
+<span class="token keyword">const</span> ora <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'ora'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> rm <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'rimraf'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> chalk <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'chalk'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> webpack <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> config <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> webpackConfig <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./webpack.prod.conf'</span><span class="token punctuation">)</span>
+
+<span class="token comment">// const spinner = ora('building for production...')</span>
+<span class="token keyword">var</span> spinner <span class="token operator">=</span> <span class="token function">ora</span><span class="token punctuation">(</span><span class="token string">'building for '</span> <span class="token operator">+</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">NODE_ENV</span> <span class="token operator">+</span> <span class="token string">' of '</span> <span class="token operator">+</span> process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">EVN_CONFIG</span><span class="token operator">+</span> <span class="token string">' mode...'</span> <span class="token punctuation">)</span>
+spinner<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">rm</span><span class="token punctuation">(</span>path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>config<span class="token punctuation">.</span>build<span class="token punctuation">.</span>assetsRoot<span class="token punctuation">,</span> config<span class="token punctuation">.</span>build<span class="token punctuation">.</span>assetsSubDirectory<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">throw</span> err
+  <span class="token function">webpack</span><span class="token punctuation">(</span>webpackConfig<span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span> stats</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    spinner<span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token keyword">throw</span> err
+    process<span class="token punctuation">.</span>stdout<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span>stats<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">colors</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">modules</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">children</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// If you are using ts-loader, setting this to true will make TypeScript errors show up during build.</span>
+      <span class="token literal-property property">chunks</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">chunkModules</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'\n\n'</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>stats<span class="token punctuation">.</span><span class="token function">hasErrors</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span><span class="token string">'  Build failed with errors.\n'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+      process<span class="token punctuation">.</span><span class="token function">exit</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">cyan</span><span class="token punctuation">(</span><span class="token string">'  Build complete.\n'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">yellow</span><span class="token punctuation">(</span>
+      <span class="token string">'  Tip: built files are meant to be served over an HTTP server.\n'</span> <span class="token operator">+</span>
+      <span class="token string">'  Opening index.html over file:// won\'t work.\n'</span>
+    <span class="token punctuation">)</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br></div></div><p>6.webpack.pro.config.js</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// 修改</span>
+ <span class="token keyword">const</span> env <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../config/prod.env'</span><span class="token punctuation">)</span>
+<span class="token comment">// 为</span>
+<span class="token keyword">const</span> env <span class="token operator">=</span> config<span class="token punctuation">.</span>build<span class="token punctuation">[</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">EVN_CONFIG</span><span class="token operator">+</span><span class="token string">'Env'</span><span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>7.页面获取环境变量来改变url</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">if</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">EVN_CONFIG</span> <span class="token operator">==</span> <span class="token string">'test'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'url-----'</span><span class="token punctuation">,</span>process<span class="token punctuation">.</span>env<span class="token punctuation">.</span><span class="token constant">EVN_CONFIG</span><span class="token operator">+</span><span class="token string">'test:url代码  ------------测试环境83------'</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>8.运行打包命令即可，如果需要输出到不同的目录可以参考上面修改config/index.js这一块的代码
+测试环境：<code>npm run build:test</code>
+正式环境：<code>npm run build:prod</code></p> <h3 id="二-vue-cli3-x"><a href="#二-vue-cli3-x" class="header-anchor">#</a> 二.vue cli3.X</h3> <p>package.json</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;serve&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service serve --mode development&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;debug&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service build --mode debug&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service build --mode prod&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;lint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service lint&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;test:unit&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service test:unit&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node index.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;server&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service serve --ignore client&quot;</span>
+  <span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">注意</p> <p>变量需要 VUE_APP_XXX
+页面中需要的地方可以通过 process.env.XXX去获取</p></div> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>if (process.env.VUE_APP_URL === 'test') {
+  require('./mock');
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>根目录下创建相关文件
+<img src="/zhaoshuhong/assets/img/vue_env.f9b301e8.png" alt="env"></p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token constant">NODE_ENV</span> <span class="token operator">=</span> <span class="token string">'development'</span>
+
+<span class="token constant">VUE_APP_URL</span> <span class="token operator">=</span> <span class="token string">'/api'</span>
+<span class="token constant">VUE_APP_PROXY_URL</span><span class="token operator">=</span><span class="token string">'http://192.168.0.1:8000'</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div></div> <footer class="page-edit"><div class="edit-link"><a href="https://gitee.com/zhaoshuhong/blog.git/edit/master/docs/vue/vueEnv.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">10/30/2020, 10:44:45 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zhaoshuhong/vue/vueVuex.html" class="prev">
+          vuex
+        </a></span> <span class="next"><a href="/zhaoshuhong/vue/vueConfig.html">
+          vue.config.js配置
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/zhaoshuhong/assets/js/app.c6c426f3.js" defer></script><script src="/zhaoshuhong/assets/js/2.5e56792b.js" defer></script><script src="/zhaoshuhong/assets/js/20.5549704f.js" defer></script>
+  </body>
+</html>

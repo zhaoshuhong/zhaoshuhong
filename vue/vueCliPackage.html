@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用vue cli打包并开发组件 | Zhao Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/zhaoshuhong/img/logo.png">
+    <meta name="description" content="zhao blog">
+    
+    <link rel="preload" href="/zhaoshuhong/assets/css/0.styles.a5fb0a7c.css" as="style"><link rel="preload" href="/zhaoshuhong/assets/js/app.c6c426f3.js" as="script"><link rel="preload" href="/zhaoshuhong/assets/js/2.5e56792b.js" as="script"><link rel="preload" href="/zhaoshuhong/assets/js/34.5aee7291.js" as="script"><link rel="prefetch" href="/zhaoshuhong/assets/js/10.76004a66.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/11.af327fad.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/12.c43f1b05.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/13.70e02188.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/14.a7f66299.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/15.09a3dafb.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/16.79880d3b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/17.dfaab4b4.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/18.14e5c0a5.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/19.0e9f4dbe.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/20.5549704f.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/21.4f23157b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/22.cdf45597.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/23.0d9a97bb.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/24.101fcc29.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/25.e6b2c037.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/26.f7e369fa.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/27.04899c95.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/28.f3944530.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/29.c6b3138b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/3.b7c37507.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/30.b1f86c09.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/31.1b82cd37.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/32.672e9ff1.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/33.53fb210f.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/35.7dac0fdd.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/36.6698f980.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/37.d3e0aeac.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/38.f1ce19c2.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/39.6526d1ab.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/4.289378ae.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/40.ff22d59c.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/41.851e5919.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/42.cd6512f3.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/43.77e4e8b1.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/5.7fab4c19.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/6.46d7fc46.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/7.e5db8d48.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/8.8da0bfc9.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/9.8063f420.js">
+    <link rel="stylesheet" href="/zhaoshuhong/assets/css/0.styles.a5fb0a7c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhaoshuhong/" class="home-link router-link-active"><!----> <span class="site-name">Zhao Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhaoshuhong/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><a href="/zhaoshuhong/About.html" class="nav-link">
+    About
+  </a></div> <a href="https://gitee.com/zhaoshuhong/blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      查看源码
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zhaoshuhong/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><a href="/zhaoshuhong/About.html" class="nav-link">
+    About
+  </a></div> <a href="https://gitee.com/zhaoshuhong/blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      查看源码
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/methods" class="sidebar-heading clickable"><span>vue methods 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueMobileSet" class="sidebar-heading clickable"><span>vue 应用移动端H5嵌入 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueMock" class="sidebar-heading clickable"><span>vue常用依赖配置 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/vue/vueCliPackage" class="sidebar-heading clickable open active"><span>vue Cli3 打包组件学习记录</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhaoshuhong/vue/vueCliPackage.html" aria-current="page" class="active sidebar-link">vueCliPackage</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhaoshuhong/vue/vueCliPackage.html#_1-使用vue-开发流程开发组件-vue-create-name" class="sidebar-link">1.使用vue 开发流程开发组件 vue create NAME</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/vue/vueCliPackage.html#_2-配置vue-config-js" class="sidebar-link">2.配置vue.config.js</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/vue/vueCliPackage.html#_3-开发组件-配置入口文件" class="sidebar-link">3.开发组件 配置入口文件</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="使用vue-cli打包并开发组件"><a href="#使用vue-cli打包并开发组件" class="header-anchor">#</a> 使用vue cli打包并开发组件</h1> <h2 id="_1-使用vue-开发流程开发组件-vue-create-name"><a href="#_1-使用vue-开发流程开发组件-vue-create-name" class="header-anchor">#</a> 1.使用vue 开发流程开发组件 <code>vue create NAME</code></h2> <p><code>目录结构</code></p> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>vue-package
+├── .browserslistrc
+├── .eslintrc.js
+├── babel.config.js
+├── examples
+│   ├── App.vue
+│   ├── assets
+│   │   └── logo.png
+│   ├── main.js
+│   ├── router.js
+│   └── views
+│       └── demo.vue
+├── package-lock.json
+├── package.json
+├── packages
+│   ├── button
+│   │   ├── index.js
+│   │   └── z-button.vue
+│   ├── ele
+│   │   └── index.js
+│   ├── index.js
+│   ├── testA
+│   │   ├── index.js
+│   │   └── src
+│   │       ├── css
+│   │       │   └── index.scss
+│   │       └── index.vue
+│   └── testB
+│       ├── index.js
+│       └── src
+│           ├── css
+│           │   └── index.scss
+│           └── index.vue
+├── public
+│   ├── favicon.ico
+│   └── index.html
+├── README.md
+├── result.md
+└── vue.config.js
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br></div></div><h2 id="_2-配置vue-config-js"><a href="#_2-配置vue-config-js" class="header-anchor">#</a> 2.配置vue.config.js</h2> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>const fs = require(&quot;fs&quot;);
+const path = require(&quot;path&quot;);
+function resolve(dir) {
+  return path.resolve(__dirname, dir);
+}
+const join = path.join;
+// 获取所有 index文件入口
+function getEntries(path) {
+  let files = fs.readdirSync(resolve(path));
+  const entries = files.reduce((ret, item) =&gt; {
+    const itemPath = join(path, item);
+    const isDir = fs.statSync(itemPath).isDirectory();
+    if (isDir) {
+      ret[item] = resolve(join(itemPath, &quot;index.js&quot;));
+    } else {
+      const [name] = item.split(&quot;.&quot;);
+      ret[name] = resolve(`${itemPath}`);
+    }
+    return ret;
+  }, {});
+  return entries;
+}
+//开发环境配置
+const devConfig = {
+  pages: {
+    index: {
+      entry: &quot;examples/main.js&quot;,   // 修改入口文件路径
+      template: &quot;public/index.html&quot;,
+      filename: &quot;index.html&quot;
+    }
+  },
+  configureWebpack: {
+    resolve: {
+      extensions: [&quot;.js&quot;, &quot;.vue&quot;, &quot;.json&quot;],
+      alias: {
+        &quot;@&quot;: resolve(&quot;packages&quot;),
+        assets: resolve(&quot;examples/assets&quot;),
+        views: resolve(&quot;examples/views&quot;)
+      }
+    }
+  },
+  chainWebpack: config =&gt; {
+    config.module
+      .rule(&quot;js&quot;)
+      .include.add(&quot;/packages&quot;)
+      .end()
+      .use(&quot;babel&quot;)
+      .loader(&quot;babel-loader&quot;)
+      .tap(options =&gt; {
+        return options;
+      });
+  },
+  devServer: {
+    port: 8080,
+    hot: true,
+    open: &quot;Google Chrome&quot;
+  }
+};
+//生产环境配置
+const buildConfig = {
+  css: {
+    sourceMap: false,
+    extract: {
+      // filename: &quot;style/[name].css&quot;
+      filename: &quot;[name]/style.css&quot;
+    }
+  },
+  configureWebpack: {
+    entry: {
+      ...getEntries(&quot;packages&quot;)
+    },
+    output: {
+      filename: &quot;[name]/index.js&quot;,
+      libraryTarget: &quot;commonjs2&quot;
+    }
+  },
+  chainWebpack: config =&gt; {
+    config.module
+      .rule(&quot;js&quot;)
+      .include.add(&quot;/packages&quot;)
+      .end()
+      .use(&quot;babel&quot;)
+      .loader(&quot;babel-loader&quot;)
+      .tap(options =&gt; {
+        return options;
+      });
+    config.optimization.delete(&quot;splitChunks&quot;);
+    config.plugins.delete(&quot;copy&quot;);
+    config.plugins.delete(&quot;html&quot;);
+    config.plugins.delete(&quot;preload&quot;);
+    config.plugins.delete(&quot;prefetch&quot;);
+    config.plugins.delete(&quot;hmr&quot;);
+    config.entryPoints.delete(&quot;app&quot;);
+
+    config.module
+      .rule(&quot;fonts&quot;)
+      .use(&quot;url-loader&quot;)
+      .tap(option =&gt; {
+        option.fallback.options.name = &quot;static/fonts/[name].[hash:8].[ext]&quot;;
+        return option;
+      });
+  },
+  outputDir: &quot;lib&quot;,
+  productionSourceMap: false
+};
+
+module.exports = process.env.NODE_ENV === &quot;development&quot; ? devConfig : buildConfig;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br></div></div><h2 id="_3-开发组件-配置入口文件"><a href="#_3-开发组件-配置入口文件" class="header-anchor">#</a> 3.开发组件 配置入口文件</h2> <ol><li>packages/组件/index.js 按需引入 每个文件的入口</li></ol> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> test <span class="token keyword">from</span> <span class="token string">&quot;./src/index.vue&quot;</span><span class="token punctuation">;</span> <span class="token comment">// 写好的组件</span>
+test<span class="token punctuation">.</span><span class="token function-variable function">install</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">Vue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>test<span class="token punctuation">.</span>name<span class="token punctuation">,</span> test<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> test<span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>2.引入其他的ui组件</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">/*components/ele/index.js*/</span>
+<span class="token keyword">import</span> <span class="token constant">ELE</span> <span class="token keyword">from</span> <span class="token string">&quot;element-ui&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;element-ui/lib/theme-chalk/index.css&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">Vue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span><span class="token constant">ELE</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>3.packages/index.js 引入全部组件入口</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">import</span> testA <span class="token keyword">from</span> <span class="token string">&quot;./testA&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> testB <span class="token keyword">from</span> <span class="token string">&quot;./testB&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> button <span class="token keyword">from</span> <span class="token string">&quot;./button&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> ele <span class="token keyword">from</span> <span class="token string">&quot;./ele&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
+  <span class="token function">install</span><span class="token punctuation">(</span><span class="token parameter">Vue</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>testA<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>testB<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>button<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>ele<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>4.package.json</p> <ul><li>修改版本号version为0.0.1</li> <li>删除&quot;private&quot;: true,</li> <li>添加&quot;main&quot;: &quot;lib/index/index.js&quot;
+发布到 npm</li></ul> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;z_ui_test&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.1.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;private&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lib/index/index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;keyword&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-package&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;用Vue Cli3实现组件库每个组件分开打包，使用babel-plugin-import实现组件按需引入&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zshCOPY&quot;</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;serve&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service serve&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service build&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;lint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service lint&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;lib&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vue-cli-service build --target lib --name vue-test --dest lib packages/index.js&quot;</span>  <span class="token comment">// 配置打包</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;core-js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.6.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.6.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;vue-router&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.0.3&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;@vue/cli-plugin-babel&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~4.3.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;@vue/cli-plugin-eslint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~4.3.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;@vue/cli-service&quot;</span><span class="token operator">:</span> <span class="token string">&quot;~4.3.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;@vue/eslint-config-prettier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;babel-eslint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^10.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;element-ui&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.13.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;eslint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.7.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;eslint-plugin-prettier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.1.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;eslint-plugin-vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.2.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;prettier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.19.1&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;sass&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.26.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;sass-loader&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^8.0.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token string-property property">&quot;vue-template-compiler&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.6.11&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p><code>npm publish</code> 发布打包后的文件(npm发包可以参考之前的文章<a href="/zhaoshuhong/webTools/npm.html">npm学习记录</a>)</p> <p>使用
+1.如果按需引入需要配置插件
+<code>npm i babel-plugin-import -D</code>
+2.配置 .babelrc</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;presets&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;@vue/app&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&quot;@babel/preset-env&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string-property property">&quot;modules&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string-property property">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">[</span>
+      <span class="token string">&quot;import&quot;</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;libraryName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;demo-vuecli3-ui&quot;</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&quot;style&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><ol start="3"><li>main.js 中引用</li></ol> <div class="language-vue line-numbers-mode"><pre class="language-vue"><code>import {Button, Input} from 'demo'
+Vue.use(Button)
+Vue.use(Input)
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p><a href="https://gitee.com/zhaoshuhong/vue-package.git" target="_blank" rel="noopener noreferrer">文件地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h1 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h1> <p><a href="https://blog.csdn.net/mate_ge/article/details/100077130" target="_blank" rel="noopener noreferrer">vuecli3创建的组件库工程实现按需引入<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://gitee.com/zhaoshuhong/blog.git/edit/master/docs/vue/vueCliPackage.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/3/2020, 11:08:34 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zhaoshuhong/vue/vuePermission.html" class="prev">
+          vue 路由/按钮权限 配置
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/zhaoshuhong/assets/js/app.c6c426f3.js" defer></script><script src="/zhaoshuhong/assets/js/2.5e56792b.js" defer></script><script src="/zhaoshuhong/assets/js/34.5aee7291.js" defer></script>
+  </body>
+</html>

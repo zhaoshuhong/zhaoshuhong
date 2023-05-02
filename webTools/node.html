@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>node 学习 | Zhao Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/zhaoshuhong/img/logo.png">
+    <meta name="description" content="zhao blog">
+    
+    <link rel="preload" href="/zhaoshuhong/assets/css/0.styles.a5fb0a7c.css" as="style"><link rel="preload" href="/zhaoshuhong/assets/js/app.c6c426f3.js" as="script"><link rel="preload" href="/zhaoshuhong/assets/js/2.5e56792b.js" as="script"><link rel="preload" href="/zhaoshuhong/assets/js/5.7fab4c19.js" as="script"><link rel="prefetch" href="/zhaoshuhong/assets/js/10.76004a66.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/11.af327fad.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/12.c43f1b05.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/13.70e02188.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/14.a7f66299.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/15.09a3dafb.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/16.79880d3b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/17.dfaab4b4.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/18.14e5c0a5.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/19.0e9f4dbe.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/20.5549704f.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/21.4f23157b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/22.cdf45597.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/23.0d9a97bb.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/24.101fcc29.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/25.e6b2c037.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/26.f7e369fa.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/27.04899c95.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/28.f3944530.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/29.c6b3138b.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/3.b7c37507.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/30.b1f86c09.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/31.1b82cd37.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/32.672e9ff1.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/33.53fb210f.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/34.5aee7291.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/35.7dac0fdd.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/36.6698f980.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/37.d3e0aeac.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/38.f1ce19c2.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/39.6526d1ab.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/4.289378ae.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/40.ff22d59c.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/41.851e5919.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/42.cd6512f3.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/43.77e4e8b1.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/6.46d7fc46.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/7.e5db8d48.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/8.8da0bfc9.js"><link rel="prefetch" href="/zhaoshuhong/assets/js/9.8063f420.js">
+    <link rel="stylesheet" href="/zhaoshuhong/assets/css/0.styles.a5fb0a7c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/zhaoshuhong/" class="home-link router-link-active"><!----> <span class="site-name">Zhao Blog</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/zhaoshuhong/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><a href="/zhaoshuhong/About.html" class="nav-link">
+    About
+  </a></div> <a href="https://gitee.com/zhaoshuhong/blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      查看源码
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/zhaoshuhong/" class="nav-link">
+    Home
+  </a></div><div class="nav-item"><a href="/zhaoshuhong/About.html" class="nav-link">
+    About
+  </a></div> <a href="https://gitee.com/zhaoshuhong/blog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+      查看源码
+      <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/webTools/chrome" class="sidebar-heading clickable"><span>chrome devtools 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/webTools/vuePress" class="sidebar-heading clickable"><span>VuePress 学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/webTools/git" class="sidebar-heading clickable"><span>GIT学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/webTools/fiddler" class="sidebar-heading clickable"><span>Fiddler学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/webTools/jenkins" class="sidebar-heading clickable"><span>Jenkins学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/webTools/npm" class="sidebar-heading clickable"><span>npm学习记录</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/zhaoshuhong/webTools/node" class="sidebar-heading clickable open active"><span>node学习记录</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/zhaoshuhong/webTools/node.html" aria-current="page" class="active sidebar-link">node</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_0-node-安装" class="sidebar-link">0. node 安装</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#一-node-js来开发cli" class="sidebar-link">一.node.js来开发Cli</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_1-创建项目-npm-init-y" class="sidebar-link">1. 创建项目 npm init -y</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_2-引入需要的相关依赖-package-json如下" class="sidebar-link">2. 引入需要的相关依赖 package.json如下:</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_3-开发入口文件-index-js" class="sidebar-link">3. 开发入口文件 index.js</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_4-添加配置命令的文件-index-config-js" class="sidebar-link">4. 添加配置命令的文件 index-config.js</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_5-使用" class="sidebar-link">5. 使用</a></li></ul></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#二-node-开启本地服务和代理" class="sidebar-link">二.node 开启本地服务和代理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_1-安装配置" class="sidebar-link">1.安装配置</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_2-代理-http-proxy-middleware" class="sidebar-link">2.代理 http-proxy-middleware</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_3-服务文件" class="sidebar-link">3.服务文件</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#_4-运行" class="sidebar-link">4.运行</a></li></ul></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#三-node-连接mysql" class="sidebar-link">三.node 连接mysql</a></li><li class="sidebar-sub-header"><a href="/zhaoshuhong/webTools/node.html#参考" class="sidebar-link">参考</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="node-学习"><a href="#node-学习" class="header-anchor">#</a> node 学习</h1> <h2 id="_0-node-安装"><a href="#_0-node-安装" class="header-anchor">#</a> 0. node 安装</h2> <p>1、下载</p> <p>下载地址：<a href="https://nodejs.org/zh-cn/download/" target="_blank" rel="noopener noreferrer">https://nodejs.org/zh-cn/download/<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>选择相应的版本下载</p> <p><img src="/zhaoshuhong/assets/img/node_download.e08cd788.png" alt="image"></p> <p>2、解压缩</p> <p>将文件解压到要安装的位置，并新建两个目录</p> <p>node-global :npm全局安装位置</p> <p>node-cache：npm 缓存路径</p> <p><img src="/zhaoshuhong/assets/img/node_file.87c579ab.png" alt="image"></p> <p>3、配置</p> <p>配置环境变量：</p> <p>控制面板\系统和安全\系统\高级系统设置\高级\环境变量</p> <p>将node.exe 所在的目录添加到path环境变量，这样我们在使用命令行时就可以在任意路径使用node命令了，同时该目录下有一个npm.cmd文件，打开文件其实就i是将我们的npm命令映射到node.exe npm-cli.js，由于存在该映射所以只要把node.exe 所在的目录添加到path环境变量，也可以在任何目录下执行npm install了。</p> <p><img src="/zhaoshuhong/assets/img/node_path.cb2d95e8.png" alt="image"></p> <p>写到这里其实node就算已经装好了。</p> <p>在命令行中输入如下命令测试</p> <p>node -v</p> <p>npm -v</p> <p>那么node-global :npm全局安装位置，node-cache：npm 缓存路径 又是怎么与npm发生关系呢？</p> <p>通过如下命令进行配置：</p> <p>npm config set prefix &quot;E:\node\node-v12.16.1-win-x64\node-global&quot;</p> <p>npm config set cache &quot;E:\node\node-v12.16.1-win-x64\node-cache&quot;</p> <p>执行npm命令进行测试：npm install webpack -g</p> <p>会发现node-global下node_modules中多了webpack 文件夹</p> <p><img src="/zhaoshuhong/assets/img/node_global.cf6a7c55.png" alt="image"></p> <p>webpack是用来打包的module，通常我们会在命令行中执行，而webpack同样在node-global中做了映射，所以只需要将node-global加入path环境变量即可。</p> <p><img src="/zhaoshuhong/assets/img/node_global_web.1bef0529.png" alt="image"></p> <p>win下，.npmrc文件的位置为：%USERPROFILE%/.npmrc</p> <h2 id="一-node-js来开发cli"><a href="#一-node-js来开发cli" class="header-anchor">#</a> 一.node.js来开发Cli</h2> <h3 id="_1-创建项目-npm-init-y"><a href="#_1-创建项目-npm-init-y" class="header-anchor">#</a> 1. 创建项目 <code>npm init -y</code></h3> <h3 id="_2-引入需要的相关依赖-package-json如下"><a href="#_2-引入需要的相关依赖-package-json如下" class="header-anchor">#</a> 2. 引入需要的相关依赖 <code>package.json</code>如下:</h3> <div class="language-json line-numbers-mode"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;util-cli&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bin&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;util-cli&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;chalk&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;commander&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^6.1.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;download-git-repo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.0.2&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;inquirer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.3.3&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;log-symbols&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.0.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ora&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^5.1.0&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><blockquote><p>第三方库
+首先来看看会用到哪些库。
+commander.js，可以自动的解析命令和参数，用于处理用户输入的命令。
+download-git-repo，下载并提取 git 仓库，用于下载项目模板。
+Inquirer.js，用于交互命令
+ora，下载过程久的话，可以用于显示下载中的动画效果。
+chalk，控制台字体样式
+log-symbols，可以在终端上显示出 √ 或 × 等的图标。</p></blockquote> <h3 id="_3-开发入口文件-index-js"><a href="#_3-开发入口文件-index-js" class="header-anchor">#</a> 3. 开发入口文件 <code>index.js</code></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token hashbang comment">#!/usr/bin/env node</span>
+<span class="token comment">/**
+ * Created by 24596 on 2019/12/3.
+ */</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'cli entry index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// cnpm install chalk commander download-git-repo inquirer log-symbols ora -D  (cnpm 需要 -D 或 -S 写入package.json)</span>
+
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 文件模块</span>
+<span class="token comment">// 可以帮助我们简化命令行开发。Commander 是一款重量轻，表现力和强大的命令行框架。提供了用户命令行输入和参数解析强大功能。</span>
+<span class="token keyword">const</span> program <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'commander'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   <span class="token comment">// 命令行工具</span>
+<span class="token keyword">const</span> download <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'download-git-repo'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  <span class="token comment">// 下载git 模板</span>
+
+<span class="token keyword">const</span> inquirer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'inquirer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>       <span class="token comment">// 交互式命令行工具</span>
+<span class="token keyword">const</span> ora <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'ora'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>              <span class="token comment">// 命令行显示loading</span>
+<span class="token keyword">const</span> chalk <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'chalk'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>             <span class="token comment">// 控制台内容样式</span>
+<span class="token keyword">const</span> symbols <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'log-symbols'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment">// 显示√或×等图标 info success error warning</span>
+<span class="token comment">// const exec = require('child_process').exec;     // 执行命令</span>
+
+program<span class="token punctuation">.</span><span class="token function">name</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./package.json'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>cliName<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 定义指令名 (index)  Usage: &lt;name&gt; &lt;command&gt; [option]</span>
+program<span class="token punctuation">.</span><span class="token function">option</span><span class="token punctuation">(</span><span class="token string">'-h, --help'</span><span class="token punctuation">,</span> <span class="token string">'命令帮助'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">function</span> <span class="token function">help</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'\r\nUsage:'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">util-cli create &lt;name&gt; :创建项目</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">util-cli config  :template 编辑</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'\r'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// eos -h</span>
+program<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'-h'</span><span class="token punctuation">,</span> help<span class="token punctuation">)</span><span class="token punctuation">;</span>
+program<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'--help'</span><span class="token punctuation">,</span> help<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+program<span class="token punctuation">.</span><span class="token function">usage</span><span class="token punctuation">(</span><span class="token string">'&lt;command&gt; [option]'</span><span class="token punctuation">,</span> <span class="token string">'option --type required'</span><span class="token punctuation">)</span>   <span class="token comment">// 用户使用提示</span>
+    <span class="token comment">// .option('-p, --path', '配置路径')   // 操作说明</span>
+    <span class="token punctuation">.</span><span class="token function">version</span><span class="token punctuation">(</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./package.json'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>version<span class="token punctuation">,</span> <span class="token string">'-v, --version'</span><span class="token punctuation">,</span> <span class="token string">'版本号'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">command</span><span class="token punctuation">(</span><span class="token string">'create'</span><span class="token punctuation">)</span>  <span class="token comment">// 指令</span>
+    <span class="token punctuation">.</span><span class="token function">description</span><span class="token punctuation">(</span><span class="token string">'创建项目文件'</span><span class="token punctuation">)</span>  <span class="token comment">// 描述</span>
+    <span class="token punctuation">.</span><span class="token function">alias</span><span class="token punctuation">(</span><span class="token string">'c'</span><span class="token punctuation">)</span> <span class="token comment">// 命令的别名</span>
+    <span class="token punctuation">.</span><span class="token function">action</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">options</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>   <span class="token comment">// 操作动作 指令回调   if create &lt;name&gt;  对应  action((name,options)=&gt;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'create start'</span><span class="token punctuation">,</span> options<span class="token punctuation">.</span>args<span class="token punctuation">,</span> process<span class="token punctuation">.</span>argv<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">const</span> name <span class="token operator">=</span> options<span class="token punctuation">.</span>args<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>  <span class="token comment">// 获取操作参数</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>symbols<span class="token punctuation">.</span>error<span class="token punctuation">,</span> chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span><span class="token string">'未输入创建目录名称'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>symbols<span class="token punctuation">.</span>info<span class="token punctuation">,</span> chalk<span class="token punctuation">.</span><span class="token function">blue</span><span class="token punctuation">(</span><span class="token string">'创建项目文件'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fs<span class="token punctuation">.</span><span class="token function">existsSync</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 文件名是否存在</span>
+            <span class="token comment">// 一. 文件创建 start</span>
+            <span class="token comment">/*const  oraInstance = ora({   // 文件加载
+                color: 'yellow',
+                text: '创建文件....'
+            }).start();
+            fs.mkdir(name, function (err) {
+                if (err) {
+                    oraInstance.fail(`mkdir err:${err}`)
+                    // console.log(symbols.error, chalk.red(`mkdir err:${err}`));
+                    return;
+                }
+                fs.writeFileSync(`${name}/README.md`, 'test');   //先写入一个空的文件 创建目录 name
+                oraInstance.succeed(chalk.green('文件创建成功'));
+            });*/</span>
+            <span class="token comment">// 文件创建 end</span>
+
+
+            <span class="token comment">// 二.交互 start--------------------------------------------------------------------------------</span>
+
+            inquirer<span class="token punctuation">.</span><span class="token function">prompt</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+                <span class="token punctuation">{</span>
+                    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'description'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'请输入项目描述'</span><span class="token punctuation">,</span>
+                    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">''</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'author'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'请输入作者名称'</span><span class="token punctuation">,</span>
+                    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token string">'admin'</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'confirm'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'readme'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'是否将创建信息 写入package.json ?'</span><span class="token punctuation">,</span>
+                    <span class="token keyword">default</span><span class="token operator">:</span> <span class="token boolean">true</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'list'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'请选择一种安装:'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'buildType'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">choices</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token string">&quot;webpack&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;gulp&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;grunt&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;rollup&quot;</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                <span class="token punctuation">{</span>
+                    <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'checkbox'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">'请选择一种安装:'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">'plugin'</span><span class="token punctuation">,</span>
+                    <span class="token literal-property property">choices</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token string">&quot;router&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;vuex&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;sass&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;eslint&quot;</span><span class="token punctuation">,</span>
+                        <span class="token string">&quot;blog&quot;</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">]</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">answers</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>answers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                    <span class="token comment">// 交互的结果操作</span>
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>answers<span class="token punctuation">.</span>readme<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token keyword">const</span> info <span class="token operator">=</span> <span class="token punctuation">{</span>
+                            <span class="token string-property property">'author'</span><span class="token operator">:</span> answers<span class="token punctuation">.</span>author<span class="token punctuation">,</span>
+                            <span class="token string-property property">'description'</span><span class="token operator">:</span> answers<span class="token punctuation">.</span>description<span class="token punctuation">,</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+                        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>fs<span class="token punctuation">.</span><span class="token function">existsSync</span><span class="token punctuation">(</span><span class="token string">'package.json'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">// 文件名是否存在</span>
+                            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>symbols<span class="token punctuation">.</span>error<span class="token punctuation">,</span> chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span><span class="token string">'package.json 不存在!'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                            <span class="token keyword">let</span> content <span class="token operator">=</span> fs<span class="token punctuation">.</span><span class="token function">readFileSync</span><span class="token punctuation">(</span><span class="token string">'package.json'</span><span class="token punctuation">,</span> <span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            content <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>content<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            <span class="token keyword">let</span> result <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>content<span class="token punctuation">,</span> info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            fs<span class="token punctuation">.</span><span class="token function">writeFileSync</span><span class="token punctuation">(</span><span class="token string">'package.json'</span><span class="token punctuation">,</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>content<span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'utf8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token punctuation">}</span>
+                    <span class="token punctuation">}</span>
+                    <span class="token comment">// 交互 end-----------------------------------------------------------------------------------------------</span>
+
+                    <span class="token comment">// 三. 从仓库拉取模板代码</span>
+
+                    <span class="token keyword">if</span> <span class="token punctuation">(</span>answers<span class="token punctuation">.</span>plugin<span class="token punctuation">.</span><span class="token function">includes</span><span class="token punctuation">(</span><span class="token string">'blog'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                        <span class="token comment">// download('zhaoshuhong/blog', name, (err) =&gt; { github</span>
+                        <span class="token keyword">const</span> downloadLoading <span class="token operator">=</span> <span class="token function">ora</span><span class="token punctuation">(</span><span class="token punctuation">{</span>   <span class="token comment">// 文件加载</span>
+                            <span class="token literal-property property">color</span><span class="token operator">:</span> <span class="token string">'yellow'</span><span class="token punctuation">,</span>
+                            <span class="token literal-property property">text</span><span class="token operator">:</span> <span class="token string">'拉取项目文件中...'</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                        <span class="token function">download</span><span class="token punctuation">(</span><span class="token string">'direct:https://gitee.com/zhaoshuhong/blog.git'</span><span class="token punctuation">,</span> name<span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token literal-property property">clone</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                            <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                                downloadLoading<span class="token punctuation">.</span><span class="token function">fail</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                                <span class="token comment">// let cmdStr = `cd ${name} `;</span>
+                                <span class="token comment">// cmdStr += `&amp;&amp; cnpm i`</span>
+                                <span class="token comment">//</span>
+                                <span class="token comment">// exec(cmdStr, (error, stdout, stderr) =&gt; {</span>
+                                <span class="token comment">//     if (error) {</span>
+                                <span class="token comment">//         downloadLoading.fail();</span>
+                                <span class="token comment">//         console.log('错误---', error);</span>
+                                <span class="token comment">//         process.exit()</span>
+                                <span class="token comment">//     }</span>
+                                <span class="token comment">//     downloadLoading.succeed(chalk.green('项目拉取成功'));</span>
+                                <span class="token comment">//     console.log(`\n cd ${name} &amp;&amp; npm run serve \n`);</span>
+                                <span class="token comment">//     process.exit()</span>
+                                <span class="token comment">// })</span>
+                                downloadLoading<span class="token punctuation">.</span><span class="token function">succeed</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">green</span><span class="token punctuation">(</span><span class="token string">'项目拉取成功'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">\n cd </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> &amp;&amp; npm install 安装相关依赖\n</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+                            <span class="token punctuation">}</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">}</span>
+
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 错误提示项目已存在，避免覆盖原有项目</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>symbols<span class="token punctuation">.</span>error<span class="token punctuation">,</span> chalk<span class="token punctuation">.</span><span class="token function">red</span><span class="token punctuation">(</span><span class="token string">'项目已存在'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+program<span class="token punctuation">.</span><span class="token function">usage</span><span class="token punctuation">(</span><span class="token string">'&lt;command&gt; [option]'</span><span class="token punctuation">,</span> <span class="token string">'option --type required'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">command</span><span class="token punctuation">(</span><span class="token string">'config'</span><span class="token punctuation">,</span> <span class="token string">'模板编辑'</span><span class="token punctuation">)</span>
+
+<span class="token comment">//解析参数这一行要放到定义的命令最后面</span>
+program<span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>process<span class="token punctuation">.</span>argv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// TODO</span>
+<span class="token comment">// 文件参考</span>
+<span class="token comment">// [仿 vue-cli 搭建属于自己的脚手架](https://juejin.im/post/6844903807919325192)</span>
+<span class="token comment">// [【中高级前端必备】手摸手教你撸一个脚手架](https://github.com/YvetteLau/Blog/issues/39)</span>
+<span class="token comment">// 设置自己的模板库 通过 axios 拉取模板的目录</span>
+<span class="token comment">// 设置配置文件 set config</span>
+<span class="token comment">// 丰富</span>
+
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br></div></div><h3 id="_4-添加配置命令的文件-index-config-js"><a href="#_4-添加配置命令的文件-index-config-js" class="header-anchor">#</a> 4. 添加配置命令的文件 <code>index-config.js</code></h3> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token hashbang comment">#!/usr/bin/env node</span>
+
+<span class="token comment">// 交互式命令行</span>
+<span class="token keyword">const</span> inquirer <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'inquirer'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 修改控制台字符串的样式</span>
+<span class="token keyword">const</span> chalk <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'chalk'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// node 内置文件模块</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// 读取根目录下的 template.json</span>
+<span class="token keyword">const</span> tplObj <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./template'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 自定义交互式命令行的问题及简单的校验</span>
+<span class="token keyword">let</span> question <span class="token operator">=</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'input'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">&quot;请输入模板名称&quot;</span><span class="token punctuation">,</span>
+        <span class="token function">validate</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>val <span class="token operator">===</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token string">'Name is required!'</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>tplObj<span class="token punctuation">[</span>val<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token string">'Template has already existed!'</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token boolean">true</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+        <span class="token literal-property property">name</span><span class="token operator">:</span> <span class="token string">&quot;url&quot;</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">'input'</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">message</span><span class="token operator">:</span> <span class="token string">&quot;请输入模板地址&quot;</span><span class="token punctuation">,</span>
+        <span class="token function">validate</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>val <span class="token operator">===</span> <span class="token string">''</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token string">'The url is required!'</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+inquirer
+    <span class="token punctuation">.</span><span class="token function">prompt</span><span class="token punctuation">(</span>question<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">answers</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// answers 就是用户输入的内容，是个对象</span>
+    <span class="token keyword">let</span> <span class="token punctuation">{</span>name<span class="token punctuation">,</span> url<span class="token punctuation">}</span> <span class="token operator">=</span> answers<span class="token punctuation">;</span>
+    <span class="token comment">// 过滤 unicode 字符</span>
+    tplObj<span class="token punctuation">[</span>name<span class="token punctuation">]</span> <span class="token operator">=</span> url<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">[\u0000-\u0019]</span><span class="token regex-delimiter">/</span><span class="token regex-flags">g</span></span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 把模板信息写入 template.json 文件中</span>
+    fs<span class="token punctuation">.</span><span class="token function">writeFile</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">./template.json</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>tplObj<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token string">'utf-8'</span><span class="token punctuation">,</span> <span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">green</span><span class="token punctuation">(</span><span class="token string">'Added successfully!\n'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>chalk<span class="token punctuation">.</span><span class="token function">grey</span><span class="token punctuation">(</span><span class="token string">'The latest template list is: \n'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>tplObj<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'\n'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br></div></div><h3 id="_5-使用"><a href="#_5-使用" class="header-anchor">#</a> 5. 使用</h3> <ul><li>方法一:
+<code>npm link</code> 完成本地的映射使用</li> <li>方法二:</li></ul> <ol><li>发布到 npm 详细操作见 <a href="/zhaoshuhong/webTools/npm.html">npm学习记录</a></li> <li><code>npm install &lt;package-name&gt; -g</code>  全局安装</li> <li><code>&lt;package-name&gt; &lt;command&gt; [option]</code> 正常使用指令</li> <li><code>npm list -g --depth 0</code> 找到 <package-name> 的安装所在路径</package-name></li></ol> <p><a href="https://gitee.com/zhaoshuhong/my-cli.git" target="_blank" rel="noopener noreferrer">文件地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="二-node-开启本地服务和代理"><a href="#二-node-开启本地服务和代理" class="header-anchor">#</a> 二.node 开启本地服务和代理</h2> <h3 id="_1-安装配置"><a href="#_1-安装配置" class="header-anchor">#</a> 1.安装配置</h3> <p>package.json</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;name&quot;: &quot;nodeStatic&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;description&quot;: &quot;&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;
+  },
+  &quot;keywords&quot;: [],
+  &quot;author&quot;: &quot;&quot;,
+  &quot;license&quot;: &quot;ISC&quot;,
+  &quot;devDependencies&quot;: {
+    &quot;express&quot;: &quot;^4.17.1&quot;,
+    &quot;http-proxy-middleware&quot;: &quot;^1.0.3&quot;
+  }
+}
+
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><h3 id="_2-代理-http-proxy-middleware"><a href="#_2-代理-http-proxy-middleware" class="header-anchor">#</a> 2.代理 http-proxy-middleware</h3> <p>proxyConfig.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>module.exports = {
+    /**
+     * port-服务启动的端口
+     */
+    // port:3300,
+
+    /**
+     * 代理的配置-可以设置多个代理
+     * @param key - 代理的匹配路径
+     * target-代理的目标地址
+     * changeOrigin-是否改变来源
+     * ws-是否支持socket
+     * pathRewrite-路径重写
+     */
+    // proxy:{
+    //     '/':{
+    //         target:&quot;http://127.169.54.36:10881&quot;,
+    //         changeOrigin:true,
+    //         ws:true,
+    //         pathRewrite:{
+    //             // &quot;old-path&quot;:&quot;new-path&quot;,
+    //             &quot;/api&quot;:&quot;&quot;
+    //         }
+    //     }
+    // }
+};
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br></div></div><h3 id="_3-服务文件"><a href="#_3-服务文件" class="header-anchor">#</a> 3.服务文件</h3> <p>server.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const express = require('express'); //express框架模块
+// const path = require('path'); //系统路径模块
+const app = express();
+const {createProxyMiddleware} = require('http-proxy-middleware');
+// 读取proxy配置
+const { proxy:proxyConfig={} } = require('./proxyConfig');
+
+const hostName = '127.0.0.1'; //ip
+const port = 8081; //端口
+
+app.use(express.static('E:\\myList')); //指定静态文件目录
+
+// app.use('/', express.static(path.join(__dirname, 'static')))
+
+// 设置代理
+Object.keys(proxyConfig).map(key=&gt;{
+    app.use(key, createProxyMiddleware(proxyConfig[key]));
+});
+
+app.listen(port, hostName, function() {
+    console.log(`服务器运行在http://${hostName}:${port}`);
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h3 id="_4-运行"><a href="#_4-运行" class="header-anchor">#</a> 4.运行</h3> <p>node server.js</p> <p><a href="https://gitee.com/zhaoshuhong/nodeStatic.git" target="_blank" rel="noopener noreferrer">文件地址<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="三-node-连接mysql"><a href="#三-node-连接mysql" class="header-anchor">#</a> 三.node 连接mysql</h2> <p>1.下载xampp (是一个功能强大的建站集成软件包)  <a href="https://www.apachefriends.org/download.html" target="_blank" rel="noopener noreferrer">https://www.apachefriends.org/download.html<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><img src="/zhaoshuhong/assets/img/node_xampp.c345e7e3.png" alt="image.png"></p> <p>2.安装 express  和 mysql
+npm install mysql  express</p> <p>3.index.js</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>const express = require('express');
+const mysql = require('mysql');
+
+const app = express();
+
+// 创建连接
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'root',
+  password: '',
+  // database: 'nodemysql'
+});
+
+// Connect
+db.connect(err =&gt; {
+  if (err) throw err;
+  console.log('MySql connected....');
+});
+
+// 创建数据库
+app.get('/createdb', (req, res) =&gt; {
+  let sql = 'CREATE DATABASE nodemysql';
+  db.query(sql, (err, result) =&gt; {
+    if (err) throw err;
+    console.log(result);
+    res.send('Database created...');
+  });
+});
+
+// 创建表
+app.get('/createpoststable', (req, res) =&gt; {
+  let sql =
+    'CREATE TABLE posts(id int AUTO_INCREMENT,title VARCHAR(255),body VARCHAR(255), PRIMARY KEY(id))';
+  db.query(sql, (err, result) =&gt; {
+    if (err) throw err;
+    console.log(result);
+    res.send('posts表已经建立...');
+  });
+});
+
+// 插入内容
+app.get('/addpost1', (req, res) =&gt; {
+  let post = { title: 'post one', body: 'this is post one' };
+  let sql = 'INSERT INTO posts SET ?';
+  db.query(sql, post, (err, result) =&gt; {
+    if (err) throw err;
+    console.log(result);
+    res.send('post 1 added....');
+  });
+});
+
+// 插入内容
+app.get('/addpost2', (req, res) =&gt; {
+  let post = { title: 'post two', body: 'this is post two' };
+  let sql = 'INSERT INTO posts SET ?';
+  db.query(sql, post, (err, result) =&gt; {
+    if (err) throw err;
+    console.log(result);
+    res.send('post 2 added....');
+  });
+});
+
+// 查询内容
+app.get('/getposts', (req, res) =&gt; {
+  let sql = 'SELECT * FROM posts';
+  db.query(sql, (err, result) =&gt; {
+    if (err) throw err;
+    console.log(result);
+    res.json(result);
+  });
+});
+
+// 查询单条内容
+app.get('/getpost/:id', (req, res) =&gt; {
+  let sql = `SELECT * FROM posts WHERE id = ${req.params.id}`;
+  db.query(sql, (err, result) =&gt; {
+    if (err) throw err;
+    console.log(result);
+    res.json(result);
+  });
+});
+
+// 更新内容
+app.get('/updatepost/:id', (req, res) =&gt; {
+  let newTitle = 'update title';
+  let sql = `UPDATE posts SET title = '${newTitle}' WHERE id = ${
+    req.params.id
+  }`;
+  db.query(sql, (err, result) =&gt; {
+    if (err) throw err;
+    console.log(result);
+    res.json('更新成功...');
+  });
+});
+
+// 删除内容
+app.get('/deletepost/:id', (req, res) =&gt; {
+  let sql = `DELETE FROM posts WHERE id = ${req.params.id}`;
+  db.query(sql, (err, result) =&gt; {
+    if (err) throw err;
+    console.log(result);
+    res.json('删除成功....');
+  });
+});
+
+app.listen('3000', () =&gt; {
+  console.log('Server started on port 3000');
+});
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br></div></div><h2 id="参考"><a href="#参考" class="header-anchor">#</a> 参考</h2> <ol><li><a href="https://my.oschina.net/zhzx/blog/1014764" target="_blank" rel="noopener noreferrer">nodejs zip压缩版安装与配置<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://segmentfault.com/a/1190000019884846" target="_blank" rel="noopener noreferrer">如何结合npm做一个前端脚手架<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.im/post/6844903949959430152" target="_blank" rel="noopener noreferrer">创建Node脚手架工具<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://juejin.im/post/6844903807919325192" target="_blank" rel="noopener noreferrer">仿 vue-cli 搭建属于自己的脚手架<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li> <li><a href="https://github.com/YvetteLau/Blog/issues/39" target="_blank" rel="noopener noreferrer">【中高级前端必备】手摸手教你撸一个脚手架<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://gitee.com/zhaoshuhong/blog.git/edit/master/docs/webTools/node.md" target="_blank" rel="noopener noreferrer">帮助我改善此页面！</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">9/25/2020, 8:58:50 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/zhaoshuhong/webTools/npm.html" class="prev">
+          NPM
+        </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/zhaoshuhong/assets/js/app.c6c426f3.js" defer></script><script src="/zhaoshuhong/assets/js/2.5e56792b.js" defer></script><script src="/zhaoshuhong/assets/js/5.7fab4c19.js" defer></script>
+  </body>
+</html>
